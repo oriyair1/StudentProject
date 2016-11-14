@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context="com.example.or.student.MainActivity">
+
+
+    <TextView
+        android:layout_width="96dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Classes Schedule"
+        android:id="@+id/textHours"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Homework"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textHomework"
+        android:layout_alignTop="@id/textHours"
+        android:layout_alignParentRight="true"
+         />
+
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calendar"
+        android:id="@+id/textCalendar"
+        android:layout_alignTop="@id/textHours"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageButton
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:id="@+id/hours"
+        android:onClick="onClickHours"
+        style="@android:style/Holo.Light.ButtonBar"
+        android:src="@drawable/hours"
+        android:layout_above="@+id/textHours"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageButton
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:id="@+id/tools"
+        android:layout_alignTop="@id/hours"
+        android:src="@drawable/homework"
+        android:onClick="onClickHomework"
+        style="@android:style/Holo.Light.ButtonBar"
+        android:layout_alignParentRight="true"
+         />
+
+    <ImageButton
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/calendar"
+        style="@android:style/Holo.Light.ButtonBar"
+        android:id="@+id/calendar"
+        android:onClick="onClickCalendar"
+        android:layout_alignTop="@id/hours"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
