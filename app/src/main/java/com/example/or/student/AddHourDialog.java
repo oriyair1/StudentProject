@@ -55,7 +55,6 @@ public class AddHourDialog extends DialogFragment {
                 if(timePicker.getCurrentMinute().toString().length()==1) minute = "0" + timePicker.getCurrentMinute().toString();
                 else minute = timePicker.getCurrentMinute().toString();
                 String time = hour + ":" + minute;
-
                 myDB.insertHour(day, time, type.getText().toString());
                 adapter.syncHours();
                 dismiss();
